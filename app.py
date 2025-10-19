@@ -8,7 +8,7 @@ class LoginRequest(BaseModel):
     email: str
     password: str
 
-@app.get("/healthz")
+@app.get("/health")
 def health():
     return {"ok": True, "service": "authentication-service"}
 
